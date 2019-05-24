@@ -1,0 +1,25 @@
+import elementos.*
+
+
+test "Hogar" {
+	const casitaLinda = new Hogar(nivelmugre = 10, nivel)
+
+}
+
+test "Huerta" {
+	const superHuerta = new Huerta(capacidadproduccion = 100)
+	const huertaMaso = new Huerta(capacidadproduccion = 30)
+	
+	reguladorHuerta.nivelMinimo(20)
+	assert.that(superHuerta.esBueno())
+	assert.that(huerta)
+}
+
+test "Barrio" {
+	const moronSUr = new Barrio(elementos = [casitaLinda, superHuerta, perrito])
+	assert.that(moronSur.esCopado())
+	
+	moronSUr.elementos([casitaLinda, perrito, casitaFea])
+	perrito.nivelSalud(230)
+	assert.notThat(moronSur.esCOpado())
+}
