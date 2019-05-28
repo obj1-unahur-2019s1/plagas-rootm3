@@ -6,6 +6,7 @@ class Hogar {
 	method esBueno() {
 		return nivelmugre <= confort / 2
 		}
+	method recibirAtaque(plaga){}
 }
 
 class Huerta {
@@ -13,6 +14,7 @@ class Huerta {
 	method esBueno() {
 		return capacidadproduccion > reguladorHuerta.nivelMinimo()
 	}
+	method recibirAtaque(plaga){}
 }
 
 object reguladorHuerta {
@@ -25,6 +27,7 @@ class Mascota {
 	method esBueno() {
 		return nivelSalud > nivelMinimo
 	}
+	method recibirAtaque(plaga){}
 }
 
 class Barrio {
